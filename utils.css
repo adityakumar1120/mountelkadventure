@@ -1,0 +1,42 @@
+.flex{
+    display: flex;
+}
+.grid{
+    display: grid;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.heading-font{
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--primary-heading);
+}
+
+.sub-heading{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--sub-text);
+}
+.btn1{
+    color: white;
+    background: var(--hover-color);
+    padding: 8px 20px;
+    display: inline-block;
+    border-radius: 4px;
+    border: 2px solid #308cfd;
+}
+
+.btn2{
+    color: #308cfd;
+    padding: 8px 20px;
+    display: inline-block;
+    border-radius: 4px;
+    border: 2px solid #308cfd;
+}
