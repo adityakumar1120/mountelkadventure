@@ -432,6 +432,9 @@ details[open] summary i{
     .review{
         width: 50%;
     }
+    .box a{
+        cursor:auto;
+    }
 }
 
 @media screen and (max-width: 700px) {
