@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* variables */
+
+:root{
+    --primary-heading: rgb(34,34,34);
+    --sub-text: rgb(70,80,90);
+    --hover-color: rgb(29, 130, 254);
+    --btn-color: rgb(69, 153, 255);
+    --hero-heading: #0775FD;
+}
+/* nav bar */
+
+header{
+    border-bottom: 2px solid var(--btn-color);
+    padding: 6px 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 45;
+}
+nav{
+    max-width: 1400px;
+    margin: auto;
+    justify-content: space-between;
+    
+}
+
+/* .logo {
+    width: 88px;
+    height: 60px;
+    overflow: hidden;
+}
+.logo svg{
+    width: 100px;
+    height: 100px;
+} */
+
+.nav-ul{
+    gap: 18px;
+}
+
+.nav-ul li a{
+    color: var(--primary-heading);
+    font-size: 16px;
+    transition: all 0.1s ease-out;
+    padding: 18px 17px;
+}
+.nav-ul li a:hover{
+    color: var(--hover-color);
+}
+.menu{
+    display: none;
+    font-size: 24px;
+    transition: all 0.1s ease-out;
+}
+
+.menu:hover{
+    color: var(--hover-color);
+}
+
+/* hero section */
+
+.hero-cont{
+    background-image: url('/assets/imgs/daysout/hero.svg');
+    height: calc(100vh - 77.6px);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.black-box{
+    height: calc(100vh - 77.6px);
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    opacity: 0.2;
+    z-index: 0;
+}
+.hero-content{
+    height: calc(100vh - 77.6px);
+    padding-inline: 40px;
+}
+.hero-heading-all{
+    font-size: 50px;
+    font-weight: 450;
+    color: var(--hero-heading);
+    z-index: 2;
+}
+.hero-heading-all span{
+    color: #0775FD;
+}
+
+
+/* page-2 */
+
+.pg-2-cont{
+    max-width: 1400px;
+    margin: auto;
+    padding: 60px 40px;
+}
+
+.pg-2-heading{
+    font-size: 38px;
+    color: var(--primary-heading);
+    font-weight: 600;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 1050px) {
+    .hero-heading-all{
+        font-size: 40px;
+
+    }
+}
+@media screen and (max-width: 900px) {
+    header{
+        padding: 0;
+       }
+    nav{
+        padding: 2px 34px ;
+    }
+
+    .nav-ul {
+        display: none ;
+    }
+    .menu{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    nav{
+        padding: 2px 17px;
+    }
+
+    .logo svg{
+        height: 50px;
+        /* object-fit: cover; */
+    }
+    .pg-2-cont{
+        padding-block: 50px;
+    }
+    .pg-2-heading{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 500px) {  
+    .hero-content{
+    padding-inline: 40px;
+    height: calc(100vh - 59.6px);
+
+    }
+    
+    .hero-heading-all{
+        font-size: 30px;
+        color: var(--primary-heading);
+    }
+    .hero-heading-all span{
+        color: var(--hero-heading);
+    }
+    .pg-2-cont{
+        padding-inline: 30px;
+    }
+    .pg-2-heading{
+        font-size: 22px;
+    }
+}
