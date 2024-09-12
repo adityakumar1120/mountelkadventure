@@ -71,12 +71,12 @@ nav{
 /* hero section */
 
 .hero{
-    background-image: url('./assets/imgs/home/hero-image.jpg');
+    background-image: url('./assets/imgs/home/home-hero.svg');
     height: calc(100vh - 77.6px);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    
+    background-repeat: no-repeat;
 }
 
 .hero-content{
