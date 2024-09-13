@@ -6,6 +6,7 @@
     font-family: "Roboto", sans-serif;
     list-style: none;
     text-decoration: none;
+    cursor: auto;
 }
 
 /* variables */
@@ -72,7 +73,7 @@ nav{
 /* hero section */
 
 .hero-cont{
-    background-image: url('/assets/imgs/program1/hero.svg');
+    background-image: url('../assets/imgs/program1/hero.svg');
     height: calc(100vh - 77.6px);
     background-size: cover;
     background-position: center;
