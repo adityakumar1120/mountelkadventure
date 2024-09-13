@@ -6,7 +6,6 @@
     font-family: "Roboto", sans-serif;
     list-style: none;
     text-decoration: none;
-    cursor: auto;
 }
 
 /* variables */
@@ -111,14 +110,83 @@ nav{
     padding: 60px 40px;
 }
 
+
 .pg-2-heading{
     font-size: 38px;
     color: var(--primary-heading);
     font-weight: 600;
     text-align: center;
 }
+.pg-content{
+    justify-content: space-around;
+    padding-block: 82px 23px;
+    flex-wrap: wrap;
+    column-gap: 197px;
+    row-gap: 70px;
+}
+.box{
+    flex-direction: column;
+    gap: 20px;
+    min-width: 175px;
+    text-align: center;
+    padding: 18px;
+    border-radius: 12px;
+    transition: all 0.1s ease-in;
+}
+.box:hover{
+    box-shadow: 2px 2px 8px gray;
+}
+.img-container{
+    width: 100px;
+    height: 100px;
+}
 
+.img-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: hue-rotate(180deg) saturate(150%) brightness(69%);
+    
+}
+.content-box-p{
+    font-size: 18px;
+    color: var(--primary-heading);
+    font-weight: 700;
+}
 
+/* page-3 */
+.pg-3-cont{
+    max-width: 1400px;
+    margin: auto;
+    padding: 60px 40px;
+    justify-content: space-between;
+    gap: 23px;
+}
+.pg-3-box{
+    background: #00c3ff2a;
+    padding-inline: 50px;
+    padding-block: 50px;
+    border-radius: 17px;
+}
+.pg-3-icon-cont{
+    
+}
+.pg-3-icon-cont img{
+    filter: hue-rotate(180deg) saturate(200%) brightness(80%);
+}
+.pg-3-box p:nth-child(2){
+    color: var(--primary-heading);
+    font-weight: 700;
+    font-size: 34px;
+    margin-block: 24px;
+}
+.pg-3-box p:last-child{
+    color: var(--sub-text);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 1;
+}
 @media screen and (max-width: 1050px) {
     .hero-heading-all{
         font-size: 40px;
@@ -150,11 +218,17 @@ nav{
         height: 50px;
         /* object-fit: cover; */
     }
+    /* page-2 */
+
     .pg-2-cont{
         padding-block: 50px;
     }
     .pg-2-heading{
         font-size: 30px;
+    }
+    /* page-2 */
+    .pg-3-cont{
+        flex-direction: column;
     }
 }
 @media screen and (max-width: 500px) {  
@@ -171,10 +245,24 @@ nav{
     .hero-heading-all span{
         color: var(--hero-heading);
     }
-    .pg-2-cont{
+    /* page-2 */
+    .pg-2-cont,.pg-3-cont{
         padding-inline: 30px;
     }
     .pg-2-heading{
-        font-size: 22px;
+        font-size: 18px;
     }
+    .pg-content{
+        gap: 50px;
+    }
+    .box{
+        min-width: 115px;
+    }
+    /* page-2 */
+    /* page-3 */
+    .pg-3-cont{
+        padding-inline: 30px;
+        flex-direction: column;
+    }
+
 }
