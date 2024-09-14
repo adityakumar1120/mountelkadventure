@@ -7,6 +7,11 @@
     list-style: none;
     text-decoration: none;
 }
+a {
+  -webkit-tap-highlight-color: transparent; /* For Chrome, Safari, and other WebKit-based browsers */
+  -webkit-focus-ring-color: transparent;    /* For iOS Safari focus */
+  outline: none; /* For removing focus outline */
+}
 
 /* variables */
 
@@ -73,14 +78,14 @@ nav{
 
 .hero-cont{
     background-image: url('../assets/imgs/program1/hero.svg');
-    height: calc(100vh - 77.6px);
+    height: 100vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 .black-box{
-    height: calc(100vh - 77.6px);
+    height: 100vh;
     width: 100%;
     background-color: black;
     position: absolute;
@@ -137,15 +142,15 @@ nav{
     box-shadow: 2px 2px 8px gray;
 }
 .img-container{
-    width: 100px;
-    height: 100px;
+    width: 110px;
+    height: 108px;
 }
 
 .img-container img{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: hue-rotate(180deg) saturate(150%) brightness(69%);
+    filter: hue-rotate(180deg) saturate(200%) brightness(120%);
     
 }
 .content-box-p{
@@ -164,9 +169,14 @@ nav{
 }
 .pg-3-box{
     background: #00c3ff2a;
-    padding-inline: 50px;
+    padding-inline: 62px;
     padding-block: 50px;
     border-radius: 17px;
+    width: 30%;
+}
+
+#pg-3-box-3{
+    padding-inline: 50px;
 }
 .pg-3-icon-cont{
     
@@ -183,17 +193,155 @@ nav{
 .pg-3-box p:last-child{
     color: var(--sub-text);
     font-weight: 400;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.5;
-    letter-spacing: 1;
+    /* letter-spacing: 1px; */
+}
+#pg-3-box-3 p:last-child{
+    font-size: 15px;
+    letter-spacing: 0px;
+}
+
+/* page-4  Testimonials*/
+
+.page-4-cont{
+    max-width: 1400px;
+    margin: auto;
+    padding: 60px 40px;
+}
+.pg-4-heading{
+    padding: 40px;
+}
+.pg-4-heading p{
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--primary-heading);
+    text-align: center;
+}
+.review-cont{
+    justify-content: space-between;
+    padding: 0 60px;
+    gap: 34px;
+}
+.star-icons i{
+    color: var(--btn-color);
+    font-size: 20px;
+}
+.review{
+    width: 30%;
+    flex-direction: column;
+}
+.review-p{
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--sub-text);
+    margin: 34px 0;
+}
+.user{
+    margin-top: auto;
+    justify-self: flex-end;
+}
+.user-img{
+    height: 40px;
+    width: 40px;
+    margin-right: 15px;
+}
+.user-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.reviewer-name p:nth-child(1){
+    font-weight: 700;
+    color: var(--primary-heading);
+    font-size: 16px;
+}
+.reviewer-name p:nth-child(2){
+    font-size: 16px;
+    font-weight: 400;
+}
+/* footer */
+
+footer{
+    max-width: 1400px;
+    margin: auto;
+}
+.footer-cont{
+    max-width: 1400px;
+    margin: auto;
+    padding: 40px 40px;
+   justify-content: space-between;
+   gap: 23px;
+   align-items: center;
+}
+
+.footer-left{
+    flex-direction: column;
+}
+
+.address{
+    margin-block: 24px;
+}
+.address p:nth-child(1),.contact p:nth-child(1){
+    font-weight: 700;
+    color: var(--primary-heading);
+}
+.address p:nth-child(2){
+    font-weight: 400;
+    color: var(--sub-text);
+}
+.contact{
+    margin-block: 0px;
+}
+.contact p{
+    font-weight: 400;
+    color: var(--sub-text);
+}
+.footer-right{
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 23px;
+    grid-row-gap: 23px;
+    height: fit-content;
+}
+.footer-right a{
+    font-size: 18px;
+    color: var(--btn-color);
+    text-decoration: underline;
+}
+.copyright{
+    padding-block: 16px;
+    margin-inline: 30px;
+    border-top: 1px solid var(--sub-text);
+    text-align: center;
 }
 @media screen and (max-width: 1050px) {
     .hero-heading-all{
         font-size: 40px;
-
+    }
+    /* pg-3 */
+    .pg-3-box{
+        padding-inline: 35px;
+        padding-block: 38px;        
+    }
+    
+    #pg-3-box-3{
+        padding-inline: 40px;
+    }
+    .pg-3-box p:nth-child(2){
+        font-size: 23px;
+        margin-block: 15px;
+    }
+    .pg-3-box p:last-child{
+        font-size: 15px;
+        line-height: 1.2;
+    }
+    #pg-3-box-3 p:last-child{
+        font-size: 12px;
     }
 }
 @media screen and (max-width: 900px) {
+    /* nav */
     header{
         padding: 0;
        }
@@ -207,6 +355,39 @@ nav{
     .menu{
         display: block;
     }
+        /* pg-3 */
+        .pg-3-cont{
+            flex-direction: column;
+        }
+        .pg-3-box{
+            padding-inline: 35px;
+            padding-block: 38px;  
+            width: 100%;
+    
+        }
+        
+        #pg-3-box-3{
+            padding-inline: 40px;
+        }
+        .pg-3-box p:nth-child(2){
+            font-size: 30px;
+            margin-block: 15px;
+        }
+        .pg-3-box p:last-child{
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        #pg-3-box-3 p:last-child{
+            font-size: 14.5px;
+        }
+        /* pg-4 */
+        .review-cont{
+            padding: 0;
+        }
+        .review{
+            width: 50%;
+        }
+        /* pg-4 */
 }
 
 @media screen and (max-width: 700px) {
@@ -227,9 +408,7 @@ nav{
         font-size: 30px;
     }
     /* page-2 */
-    .pg-3-cont{
-        flex-direction: column;
-    }
+
 }
 @media screen and (max-width: 500px) {  
     .hero-content{
@@ -264,5 +443,39 @@ nav{
         padding-inline: 30px;
         flex-direction: column;
     }
-
+     /* pg-4 */
+     .pg-4-heading{
+        padding: 23px;
+    }
+    .review-cont{
+        flex-direction: column;
+    }
+    .review{
+        width: 100%;
+    }
+    .review-p{
+        margin: 20px 0;
+    }
+    /* pg-4 */
+    /* footer */
+    .footer-cont{
+        flex-direction: column;
+      }
+      .footer-right{
+          width: 100%;
+          place-items: center;
+      }
+      .footer-left{
+          width: 100%;
+      }
+      .contact p:last-child{
+         font-size: 14px;
+      }
+      .footer-right{
+          grid-template-columns: 1fr;
+      }
+      /* reducign the padding of all pages container for mobile */
+    .page-4-cont,.footer-cont{
+        padding-inline: 30px;
+    }
 }
