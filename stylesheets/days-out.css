@@ -387,7 +387,7 @@ footer{
         .review{
             width: 50%;
         }
-        /* pg-4 */
+        
 }
 
 @media screen and (max-width: 700px) {
@@ -397,7 +397,6 @@ footer{
 
     .logo svg{
         height: 50px;
-        /* object-fit: cover; */
     }
     /* page-2 */
 
@@ -437,8 +436,8 @@ footer{
     .box{
         min-width: 115px;
     }
-    /* page-2 */
-    /* page-3 */
+    /* page-2 
+     page-3 */
     .pg-3-cont{
         padding-inline: 30px;
         flex-direction: column;
@@ -456,8 +455,8 @@ footer{
     .review-p{
         margin: 20px 0;
     }
-    /* pg-4 */
-    /* footer */
+     /* pg-4 
+    footer */
     .footer-cont{
         flex-direction: column;
       }
