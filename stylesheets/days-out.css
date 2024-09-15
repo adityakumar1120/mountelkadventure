@@ -11,6 +11,7 @@ a {
   -webkit-tap-highlight-color: transparent; /* For Chrome, Safari, and other WebKit-based browsers */
   -webkit-focus-ring-color: transparent;    /* For iOS Safari focus */
   outline: none; /* For removing focus outline */
+  cursor: pointer;
 }
 
 /* variables */
@@ -91,6 +92,8 @@ nav{
     position: absolute;
     opacity: 0.2;
     z-index: 0;
+    top: 0;
+    left: 0;
 }
 .hero-content{
     height: calc(100vh - 77.6px);

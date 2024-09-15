@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>In school</title>
+    <title>Mount elk adventure</title>
     <link rel="stylesheet" href="utils.css">
     <link rel="stylesheet" href="./stylesheets/days-out.css">
-    <link rel="stylesheet" href="./stylesheets/in-school.css">
+    <link rel="stylesheet" href="./stylesheets/contact-us.css">
     <link
     href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
     rel="stylesheet"
@@ -14,6 +14,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<script src="script.js"></script>
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "PSIl-UxcKZkpALxPH",
+      });
+   })();
+</script>
 </head>
 <body>
     <main>
@@ -43,12 +54,40 @@
             </nav>
         </header>
         <section id="hero pg-1">
-            <div class="in-school-hero-cont">
+            <div class="about-us-hero-cont">
                 <div class="black-box"></div>
                 <div class="hero-content flex align-center justify-center">
-                    <p class="hero-heading-all"> <span>Unlock Your Child's Potential</span></p>
+                    <p class="hero-heading-all">Contact <span>Mount Elk</span> Adventure</p>
                 </div>
             </div>
+        </section>
+        <section id="pg-3">
+            <div class="pg-2-cont">
+               <div class="contact-pg-3-cont flex align-center">
+                <div class="contact-pg-3-left">
+                    <h1>GET IN TOUCH WITH MOUNT ELK</h1>
+                    <div>
+                        <p>Reach out to us for any inquiries or information</p>
+                        <a href="https://www.google.co.in/maps/place/WZ-823/data=!4m7!3m6!1s0x390d034e9763477f:0x218460d5a765c8c0!8m2!3d28.6209486!4d77.1398246!16s%2Fg%2F11mqb5rlfh!19sChIJf0djl04DDTkRwMhlp9VghCE?authuser=0&hl=en&rclk=1" target="_blank"><i class="ri-map-pin-2-line"></i> Wz-591 NARAINA VILLAGE NEW DELHI-110028</a>
+                        <p><i class="ri-phone-line"></i>7428070559</p>
+                        <p><i class="ri-phone-line"></i>8130111636</p>
+                        <p><i class="ri-mail-line"></i>mountelkadventure@gmail.com</p>
+                    </div>
+                </div>
+                <div class="contact-pg-3-right">
+                    <form action="">
+                        <div class="form-group flex">
+                            <input id="name" type="text" placeholder="Name" required>
+                            <input id="email" type="email" placeholder="Email" required>
+                            <input id="phonenumber" type="number" placeholder="Phone Number" required>
+                            <textarea name="message" id="message" rows="3" placeholder="Your Message"></textarea>
+                            <a type="submit" class="contact-btn btn1" onclick="sendMail()">Send Message</a>
+                        </div>
+                    </form>
+                </div>
+               </div>
+            </div>
+
         </section>
         <section id="pg-2">
             <div class="pg-2-cont">
@@ -90,42 +129,47 @@
                 </div>
             </div>
         </section>
-        <section id="pg-3">
-            <div class="pg-3-cont">
-                <div class="pg-2-heading-cont"></div>
-                    <p class="pg-2-heading">Epowering Your Child</p>
-                
-               <div class="in-school-pg-3-box-cont flex align-center">
-                <div class="in-school-pg-3-left">
-                    <img src="./assets/imgs/inschool/football.jpg" alt="">
+       
+        <section id="page-4 testimonials">
+            <div class="page-4-cont">
+                <div class="pg-4-heading">
+                    <p>What Parents Say</p>
                 </div>
-                <div class="in-school-pg-3-right flex">
-                    <p>Physical and mental well-being are crucial for children's development.</p>
-                    <p>Mount Elk Adventure is a power-packed program that helps children identify and conquer fears, develop logical reasoning, planning skills, and hands-on learning. They gain newfound confidence and abilities</p>
-                </div>
-               </div>
-            </div>
-        </section>
-        <section id="pg-4">
-            <div class="pg-3-cont">
-                <div class="in-school-pg-4-cont">
-                    <div class="pg-2-heading-cont"></div>
-                    <p class="pg-2-heading">PROGRAM OPTIONS AVAILABLE</p>
-                
-               <div class="in-school-pg-4-box-cont flex ">
-                <div class="in-school-pg-4-box flex">
-                    <p>9 AM TO 1 PM</p>
-                    <p>A short and crisp program that starts and ends within the school timings.</p>
-                </div>
-                <div class="in-school-pg-4-box flex">
-                    <p>9 AM TO 4 PM</p>
-                    <p>An action packed adventure day in your school with hygienic meals and exciting camp games.</p>
-                </div>
-                <div class="in-school-pg-4-box flex">
-                    <p>OVERNIGHT</p>
-                    <p>An experience of staying in tents away from parents within a controlled environment and safe boundaries of the school.</p>
-                </div>
-               </div>
+                <div class="review-cont flex">
+                    <div class="review flex">
+                        <div class="star-icons">
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+                        </div>
+                        <p class="review-p">Mount Elk Adventure programs have truly transformed our children's lives. They have gained confidence, leadership skills, and a love for the outdoors.</p>
+                        <div class="user flex">
+                            <div class="user-img">
+                                <img src="./assets/imgs/home/box-img1.svg" alt="">
+                               
+                            </div>
+                            <div class="reviewer-name">
+                                <p>John Doe</p>
+                                <p>Parent</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review flex">
+                        <div class="star-icons">
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+                        </div>
+                        <p class="review-p">The adventure activities offered by Mount Elk Adventure have had a profound impact on our children. They have learned valuable life skills and developed a strong sense of teamwork.</p>
+                        <div class="user flex  ">
+                            <div class="user-img">
+                                <img src="./assets/imgs/home/box-img1.svg" alt="">
+                               
+                            </div>
+                            <div class="reviewer-name">
+                                <p>John Doe</p>
+                                <p>Parent</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -164,6 +208,7 @@
              
 
         </footer>
+
     </main>
 </body>
 </html>
