@@ -21,4 +21,15 @@ function sendMail(){
     .catch((err) => console.log('error'))
 }
 
-console.log('hii');
+const menuIcon = document.querySelector('.menu')
+const headerContent = document.querySelector('.header-content')
+const closeIcon = document.querySelector('.close-icon')
+
+menuIcon.addEventListener('click', () =>{
+    headerContent.classList.add('menu-open')
+})
+
+closeIcon.addEventListener('click', () =>{
+    headerContent.classList.remove('menu-open')
+
+})

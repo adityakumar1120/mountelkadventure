@@ -15,7 +15,9 @@ a {
 }
 
 /* variables */
-
+main{
+    overflow-x: hidden;
+}
 :root{
     --primary-heading: rgb(34,34,34);
     --sub-text: rgb(70,80,90);
@@ -54,6 +56,7 @@ nav{
 
 .nav-ul{
     gap: 18px;
+    background: white;
 }
 
 .nav-ul li a{
@@ -75,6 +78,16 @@ nav{
     color: var(--hover-color);
 }
 
+.close-icon{
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    cursor: pointer;
+    display: none;
+}
+.close-icon:hover{
+    color: var(--btn-color);
+}
 /* hero section */
 
 .hero-cont{
@@ -351,14 +364,36 @@ footer{
     nav{
         padding: 2px 34px ;
     }
-
+   
     .nav-ul {
-        display: none ;
+        position: absolute;
+        background: rgba(255, 255, 255,0.95);
+        flex-direction: column;
+        right: -200px;
+        top: 24px;
+        padding: 26px 20px;
+        gap: 23px;
+        backdrop-filter: blur(4px);
+        transition: right 0.25s ease-in-out;
+        /* display: none; */
+    }
+
+    .close-icon{
+        display: block;
+        font-size: 23px;
     }
     .menu{
         display: block;
+        cursor: pointer;
     }
-        /* pg-3 */
+    .menu-open .nav-ul{
+        /* display: flex; */
+        right: 24px;
+    }
+    .menu-open .menu{
+        display: none;
+    }
+    /*  pg-3 */
         .pg-3-cont{
             flex-direction: column;
         }
