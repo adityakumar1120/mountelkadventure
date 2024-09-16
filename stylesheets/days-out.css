@@ -7,7 +7,7 @@
     list-style: none;
     text-decoration: none;
 }
-a {
+a, .menu{
   -webkit-tap-highlight-color: transparent; /* For Chrome, Safari, and other WebKit-based browsers */
   -webkit-focus-ring-color: transparent;    /* For iOS Safari focus */
   outline: none; /* For removing focus outline */
@@ -316,7 +316,7 @@ footer{
 }
 .footer-right{
     grid-template-columns: 1fr 1fr;
-    grid-column-gap: 23px;
+    grid-column-gap: 55px;
     grid-row-gap: 23px;
     height: fit-content;
 }

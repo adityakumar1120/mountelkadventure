@@ -7,11 +7,12 @@
     list-style: none;
     text-decoration: none;
 }
-a {
-  -webkit-tap-highlight-color: transparent; /* For Chrome, Safari, and other WebKit-based browsers */
-  -webkit-focus-ring-color: transparent;    /* For iOS Safari focus */
-  outline: none; /* For removing focus outline */
-}
+a, .menu{
+    -webkit-tap-highlight-color: transparent; /* For Chrome, Safari, and other WebKit-based browsers */
+    -webkit-focus-ring-color: transparent;    /* For iOS Safari focus */
+    outline: none; /* For removing focus outline */
+    cursor: pointer;
+  }
 
 /* variables */
 

@@ -7,10 +7,11 @@
     list-style: none;
     text-decoration: none;
 }
-a {
+a, .menu {
     -webkit-tap-highlight-color: transparent; /* For Chrome, Safari, and other WebKit-based browsers */
     -webkit-focus-ring-color: transparent;    /* For iOS Safari focus */
     outline: none; /* For removing focus outline */
+    cursor: pointer;
   }
   
 /* variables */
@@ -69,6 +70,7 @@ nav{
     display: none;
     font-size: 24px;
     transition: all 0.1s ease-out;
+    cursor: pointer;
 }
 
 .menu:hover{
@@ -404,7 +406,7 @@ footer{
 }
 .footer-right{
     grid-template-columns: 1fr 1fr;
-    grid-column-gap: 23px;
+    grid-column-gap: 55px;
     grid-row-gap: 23px;
     height: fit-content;
 }
@@ -475,7 +477,7 @@ footer{
         gap: 23px;
         backdrop-filter: blur(4px);
         transition: right 0.25s ease-in-out;
-        /* display: none; */
+        
     }
 
     .close-icon{
@@ -484,10 +486,8 @@ footer{
     }
     .menu{
         display: block;
-        cursor: pointer;
     }
     .menu-open .nav-ul{
-        /* display: flex; */
         right: 24px;
     }
     .menu-open .menu{
