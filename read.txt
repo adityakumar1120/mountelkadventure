@@ -1,4 +1,0 @@
-1)links lagana hai
-2)hover effect
-3)testimonials mein name and img change karna hai
-4) address dena hai footer mein
